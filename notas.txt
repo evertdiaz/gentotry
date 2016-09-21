@@ -1,0 +1,8 @@
+express-generator -> Paquete que puede generar aplicaciones basada en express. Se debe instalar como globa. 
+npm i -g express-generator
+express nombreApp -> Construya una carpeta con todo lo necesario para correr express en la app.
+express nombreApp --hogan -c less/stylus -> Usa motor de templates hogan y less o Styles para CSS
+
+nodemon -> Node Monitor. Es un paquete que cuando vea algún cambio en alguna dependencia o codigo 
+sudo npm i -g nodemon
+nodemon ruta_archivo_app
