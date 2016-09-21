@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var mongoose = require('mongoose')
+var User = require('../models')
 
 /* GET users listing. */
 // router.get('/', function(req, res, next) {
@@ -9,9 +9,8 @@ var mongoose = require('mongoose')
 
 
 
-
 router.get('/', function(req, res, next) {
-  mongoose.model('users').find(function(err, users) {
+  User.find(function(err, users) {
     res.send(users)
   })
 })

@@ -25,17 +25,9 @@ app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.use('/', routes);
-// app.use('/users', users);
-
-mongoose.connect('mongodb://localhost/gento')
-mongoose.model('users', {name: String})
-
-app.get('/users', function(req, res) {
-  mongoose.model('users').find(function(err, users) {
-    res.send(users)
-  })
-})
+app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -49,7 +41,8 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-  console.log('hola')
+  console.log('Servidor Iniciado en Developent Env. localhost:3000')
+  mongoose.connect('mongodb://localhost/gento')
   
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
