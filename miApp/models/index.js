@@ -11,7 +11,11 @@ var User = mongoose.model('users')
 
 var clothesSchema = new Schema({
 	tipo: String,
-	precio: Number
+	precio: Number,
+	user: {
+		type: Schema.ObjectId,
+		ref: 'users'
+	}
 })
 mongoose.model('clothes', clothesSchema)
 var clothes = mongoose.model('clothes')

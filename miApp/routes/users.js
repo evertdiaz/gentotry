@@ -15,4 +15,11 @@ router.get('/', function(req, res, next) {
   })
 })
 
+router.get('/:userId', function(req, res, next) {
+	// De igual manera sería buscar por name
+  User.find({_id: req.params.userId}, function(err, users) {
+    res.send(users)
+  })
+})
+
 module.exports = router;
