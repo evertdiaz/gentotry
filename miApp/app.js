@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose')
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -23,8 +25,17 @@ app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/hola', routes);
+app.use('/', routes);
 // app.use('/users', users);
+
+mongoose.connect('mongodb://localhost/gento')
+mongoose.model('users', {name: String})
+
+app.get('/users', function(req, res) {
+  mongoose.model('users').find(function(err, users) {
+    res.send(users)
+  })
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -38,6 +49,8 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
+  console.log('hola')
+  
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
@@ -46,6 +59,9 @@ if (app.get('env') === 'development') {
     });
   });
 }
+
+
+
 
 // production error handler
 // no stacktraces leaked to user

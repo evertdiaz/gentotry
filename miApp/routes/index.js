@@ -12,15 +12,15 @@ router.get('/', function(req, res, next) {
 	console.log(req.query)
 })
 
-router.get('/users', function(req, res, next) {
-	res.send({
-		users: ["evert", "carlos", "diaz", "buitron"]
-	})
-})
+// router.get('/users', function(req, res, next) {
+// 	res.send({
+// 		users: ["evert", "carlos", "diaz", "buitron"]
+// 	})
+// })
 
-router.get('/users/:id', function(req, res, next) {
-	console.log(req.params)
-	res.send(200)
-})
+// router.get('/users/:id', function(req, res, next) {
+// 	console.log(req.params)
+// 	res.send(200)
+// })
 
 module.exports = router;
