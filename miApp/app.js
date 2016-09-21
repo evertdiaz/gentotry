@@ -31,6 +31,18 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/clothes', clothes);
 
+// NOTA: Otra forma sin usar middlewares es cargar directamente aquí los archivos de modelos:
+// var fs = require('fs')
+// fs.readdirSync(__dirname + '/mdodels').forEach(function(filename) {
+//   if(~filename.indexOf('.js')) require(__dirname + '/models/' + filename)
+// })
+// Y luego hacemos los get directos. ESTO NO ES TAN NECESARIO EN REALIDAD
+// app.get('/users', function(req, res) {
+//   mongoose.model('users').find(function(err, users) {
+//     res.send(users)
+//   })
+// })
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
