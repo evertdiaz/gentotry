@@ -1,0 +1,643 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    title
+      | Comprar - Gentlers
+    link(rel='stylesheet', type='text/css', href='/stylesheets/main.css')
+  body
+    #root
+      .page-v2
+        // ===== MENU DE NAVEGACION =====
+        .top-nav
+          section.nav-bar.guest
+            a.logo.active(href='#')
+            section.guest.main
+              a.nav-link(href='/')
+                span Inicio
+              a.nav-link(href='/shop')
+                span Comprar
+              a.nav-link(href='#')
+                span Blog
+              a.nav-link(href='#')
+                span Login
+              a.grabr-button(href='#')
+                span Regìstrate
+        // ===== FIN MENU DE NAVEGACION =====
+        .page-wrapper
+          .shop.p-xs-b-1.m-xs-b-3
+            .shop__banner.m-sm-b-2
+              .shop__banner-body
+                h2.m-xs-b-0
+                  span
+                    | Shop Items From Around The World
+                .m-xs-b-2
+                  span
+                    | Get items from anywhere in the word delivered to you by a traveler going your way.
+                form.item-search.landing-intro__search
+                  input.item-search__input(placeholder='Paste URL or type the item you’re looking for', value='')
+                  button.item-search__button.button.hidden-xs-down(type='submit') Start Order
+                a.btn.btn-block.btn-primary.hidden-sm-up(href='#')
+                  span
+                    | Start Order
+            .container
+              .text-xs-center.m-xs-y-2.p-xs-x-1
+                h2.font-weight-bold
+                  span
+                    | Curated Collections
+                p
+                  span
+                    | Be one of the first in your city to get your hands on the world’s coolest items and newest releases.
+              section.row.m-xs-t-1.p-sm-x-0
+                .col-xs-12.col-sm-6.col-md-4.col-lg-3
+                  .card.collection-preview
+                    a.d-block.link-block.card-img-top.card-img-top--collection-preview(href='#')
+                      img.card-img-top__img(src='assets/file.jpeg')
+                      .collection-preview__thumbnail-list
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(1).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(2).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(3).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(4).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | Fab
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | 12 items, starting at
+                          span
+                          span.text-primary
+                            span
+                              | $30
+                .col-xs-12.col-sm-6.col-md-4.col-lg-3
+                  .card.collection-preview
+                    a.d-block.link-block.card-img-top.card-img-top--collection-preview(href='#')
+                      img.card-img-top__img(src='assets/file(5).jpeg')
+                      .collection-preview__thumbnail-list()
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(6).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(7).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(8).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(9).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | Touch of Modern
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | 12 items, starting at
+                          span
+                          span.text-primary
+                            span
+                              | $10
+                .col-xs-12.col-sm-6.col-md-4.col-lg-3.hidden-xs-down
+                  .card.collection-preview
+                    a.d-block.link-block.card-img-top.card-img-top--collection-preview(href='#')
+                      img.card-img-top__img(src='assets/file(10).jpeg')
+                      .collection-preview__thumbnail-list
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(11).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(12).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(13).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(14).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | Grecian Summer by LICP
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | 12 items, starting at
+                          span
+                          span.text-primary
+                            span
+                              | $11
+                .col-xs-12.col-sm-6.col-md-4.col-lg-3.hidden-xs-down
+                  .card.collection-preview
+                    a.d-block.link-block.card-img-top.card-img-top--collection-preview(href='#')
+                      img.card-img-top__img(src='assets/file(15).jpeg')
+                      .collection-preview__thumbnail-list
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(16).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(17).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(18).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(19).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | Amazon
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | 20 items, starting at
+                          span
+                          span.text-primary
+                            span
+                              | $7
+                .col-xs-12.col-sm-6.col-md-4.col-lg-3.hidden-xs-down.hidden-sm-down
+                  .card.collection-preview
+                    a.d-block.link-block.card-img-top.card-img-top--collection-preview(href='#')
+                      img.card-img-top__img(src='assets/file(20).jpeg')
+                      .collection-preview__thumbnail-list
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(21).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(22).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(23).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(24).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | Fitness by Just Cherished
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | 7 items, starting at
+                          span
+                          span.text-primary
+                            span
+                              | $5
+                .col-xs-12.col-sm-6.col-md-4.col-lg-3.hidden-xs-down.hidden-sm-down
+                  .card.collection-preview
+                    a.d-block.link-block.card-img-top.card-img-top--collection-preview(href='#')
+                      img.card-img-top__img(src='assets/file(25).jpeg')
+                      .collection-preview__thumbnail-list
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(26).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(27).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(28).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(29).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | Fancy
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | 16 items, starting at
+                          span
+                          span.text-primary
+                            span
+                              | $9
+                .col-xs-12.col-sm-6.col-md-4.col-lg-3.hidden-xs-down.hidden-sm-down.hidden-md-down
+                  .card.collection-preview
+                    a.d-block.link-block.card-img-top.card-img-top--collection-preview(href='#')
+                      img.card-img-top__img(src='assets/file(30).jpeg')
+                      .collection-preview__thumbnail-list
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(31).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(32).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(33).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(34).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | London Vibe
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | 50 items, starting at
+                          span
+                          span.text-primary
+                            span
+                              | $5
+                .col-xs-12.col-sm-6.col-md-4.col-lg-3.hidden-xs-down.hidden-sm-down.hidden-md-down
+                  .card.collection-preview
+                    a.d-block.link-block.card-img-top.card-img-top--collection-preview(href='#')
+                      img.card-img-top__img(src='assets/file(35).jpeg')
+                      .collection-preview__thumbnail-list
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(36).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(37).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(38).jpeg')
+                        .collection-preview__thumbnail
+                          img.card-img-top__img(src='assets/file(39).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | Tech Essentials
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | 47 items, starting at
+                          span
+                          span.text-primary
+                            span
+                              | $11
+              .row
+                .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3
+                  .p-xs-b-1.p-xs-t-2.p-xs-x-1.p-sm-x-0
+                    a.btn.btn-block.btn-primary(href='#')
+                      span
+                        | View All Collections
+              .text-xs-center.m-xs-t-3.m-xs-b-2.p-xs-x-1
+                h2.font-weight-bold
+                  span
+                    | Most Popular Items
+                p
+                  span
+                    | Our global community can’t get enough of these items!
+              section.row.m-t-1.p-xs-x-1.p-sm-x-0
+                .col-xs-6.col-md-4.col-lg-3
+                  .card
+                    a.d-block.link-block.card-img-top.card-img-top--item-preview(href='#')
+                      img.card-img-top__img(src='assets/file(40).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | Mason Vitamins Collagen Cream
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | Item price from
+                          span
+                          a(href='#')
+                            | iherb.com
+                          span
+                            | :
+                        span
+                        span.text-primary
+                          span
+                            | $7
+                .col-xs-6.col-md-4.col-lg-3
+                  .card
+                    a.d-block.link-block.card-img-top.card-img-top--item-preview(href='#')
+                      img.card-img-top__img(src='assets/file(41).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | New Balance 574 State Fair Sneakers
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | Item price from
+                          span
+                          a(href='#')
+                            | newbalance.com
+                          span
+                            | :
+                        span
+                        span.text-primary
+                          span
+                            | $80
+                .col-xs-6.col-md-4.col-lg-3
+                  .card
+                    a.d-block.link-block.card-img-top.card-img-top--item-preview(href='#')
+                      img.card-img-top__img(src='assets/file(42).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | A Ma Maniere x Diadora Sneakers
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | Item price from
+                          span
+                          a(href='#')
+                            | a-ma-maniere.com
+                          span
+                            | :
+                        span
+                        span.text-primary
+                          span
+                            | $300
+                .col-xs-6.col-md-4.col-lg-3
+                  .card
+                    a.d-block.link-block.card-img-top.card-img-top--item-preview(href='#')
+                      img.card-img-top__img(src='assets/file(43).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | Erborian BB Cream with Ginseng
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | Item price from
+                          span
+                          a(href='#')
+                            | erborian.com
+                          span
+                            | :
+                        span
+                        span.text-primary
+                          span
+                            | $18
+                .col-xs-6.col-md-4.col-lg-3.hidden-sm-down
+                  .card
+                    a.d-block.link-block.card-img-top.card-img-top--item-preview(href='#')
+                      img.card-img-top__img(src='assets/file(44).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | YEEZY Season 2 Boots
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | Item price from
+                          span
+                          a(href='#')
+                            | yeezysupply.com
+                          span
+                            | :
+                        span
+                        span.text-primary
+                          span
+                            | $642
+                .col-xs-6.col-md-4.col-lg-3.hidden-sm-down
+                  .card
+                    a.d-block.link-block.card-img-top.card-img-top--item-preview(href='#')
+                      img.card-img-top__img(src='assets/file(45).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | Natural Shea Butter by Now Foods
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | Item price from
+                          span
+                          a(href='#')
+                            | iherb.com
+                          span
+                            | :
+                        span
+                        span.text-primary
+                          span
+                            | $7
+                .col-xs-6.col-md-4.col-lg-3.hidden-sm-down.hidden-md-down
+                  .card
+                    a.d-block.link-block.card-img-top.card-img-top--item-preview(href='#')
+                      img.card-img-top__img(src='assets/file(46).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | Kiss Me Heroine Mascara
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | Item price from
+                          span
+                          a(href='#')
+                            | hairbb.com
+                          span
+                            | :
+                        span
+                        span.text-primary
+                          span
+                            | $13
+                .col-xs-6.col-md-4.col-lg-3.hidden-sm-down.hidden-md-down
+                  .card
+                    a.d-block.link-block.card-img-top.card-img-top--item-preview(href='#')
+                      img.card-img-top__img(src='assets/file(47).jpeg')
+                    .card-block
+                      h4.card-title.text-truncate
+                        | Fresh Sugar Sport SPF30
+                      p.card-text.text-truncate
+                        span
+                          span
+                            | Item price from
+                          span
+                          a(href='#')
+                            | fresh.com
+                          span
+                            | :
+                        span
+                        span.text-primary
+                          span
+                            | $25
+              .text-xs-center.m-xs-t-3.m-xs-b-2.p-xs-x-1
+                h2.font-weight-bold
+                  span
+                    | Newly Posted Grabs
+                p
+                  span
+                    | See which one of these new grabs match your travel plans and be the first to make a delivery offer!
+              section.row.m-t-1
+                .col-lg-10.col-xs-12.offset-lg-1.m-b-1
+                  .grab-preview
+                    a.link-block.grab-preview__img-wrapper.hidden-sm-down(href='#')
+                      img.grab-preview__img(src='assets/file(48).jpeg')
+                    .grab-preview__content
+                      .grab-preview__content-head
+                        .grab-preview__avatar
+                          img.avatar.m-xs-r-space(src='assets/file(49).jpeg')
+                          span.grab-preview__username.m-xs-r-space
+                            | Bruno
+                          span.text-muted
+                            span
+                              | requested
+                        span.text-muted
+                          | 7 minutes ago
+                      a.grab-preview__content-body.link-block(href='#')
+                        img.grab-preview__img.hidden-md-up(src='assets/file(50).jpeg')
+                        .grab-preview__content
+                          h5.grab-preview__title.word-break
+                            | Apple Watch Sport
+                          .grab-preview__fields-list
+                            ul.icon-list.text-small
+                              li.icon-list__item
+                                .icon-list__item-icon.hidden-xs-down
+                                  i.icon.icon--route
+                                .icon-list__item-content.grab-preview__field-content
+                                  span.text-muted
+                                    span
+                                      | Deliver to
+                                  span.text-primary.pull-sm-right.m-xs-l-space
+                                    | São Paulo
+                              li.icon-list__item
+                                .icon-list__item-icon.hidden-xs-down
+                                .icon-list__item-content.grab-preview__field-content
+                                  span.text-muted
+                                    span
+                                      | From
+                                  span.text-primary.pull-sm-right.m-xs-l-space
+                                    | Anywhere
+                      .grab-preview__content-foot
+                        span.m-xs-r-space
+                          span
+                            | Traveler reward
+                          span
+                          span.text-primary
+                            span
+                              | $15
+                        a.pull-xs-right.text-primary(href='#')
+                          i.icon.icon--airplane.m-xs-r-space
+                          span
+                            | Make offer
+                .col-lg-10.col-xs-12.offset-lg-1.m-b-1
+                  .grab-preview
+                    a.link-block.grab-preview__img-wrapper.hidden-sm-down(href='#')
+                      img.grab-preview__img(src='assets/file(51).jpeg')
+                    .grab-preview__content
+                      .grab-preview__content-head
+                        .grab-preview__avatar
+                          img.avatar.m-xs-r-space(src='assets/file(52).jpeg')
+                          span.grab-preview__username.m-xs-r-space
+                            | Ramom
+                          span.text-muted
+                            span
+                              | requested
+                        span.text-muted
+                          | 21 minutes ago
+                      a.grab-preview__content-body.link-block(href='#')
+                        img.grab-preview__img.hidden-md-up(src='assets/file(53).jpeg')
+                        .grab-preview__content
+                          h5.grab-preview__title.word-break
+                            | Amazon.Com: Garmin VÃ­Voactive Hr Gps Smart Watch, Regular Fit Black
+                          .grab-preview__fields-list
+                            ul.icon-list.text-small
+                              li.icon-list__item
+                                .icon-list__item-icon.hidden-xs-down
+                                  i.icon.icon--route
+                                .icon-list__item-content.grab-preview__field-content
+                                  span.text-muted
+                                    span
+                                      | Deliver to
+                                  span.text-primary.pull-sm-right.m-xs-l-space
+                                    | Rio de Janeiro
+                              li.icon-list__item
+                                .icon-list__item-icon.hidden-xs-down
+                                .icon-list__item-content.grab-preview__field-content
+                                  span.text-muted
+                                    span
+                                      | From
+                                  span.text-primary.pull-sm-right.m-xs-l-space
+                                    | Anywhere
+                      .grab-preview__content-foot
+                        span.m-xs-r-space
+                          span
+                            | Traveler reward
+                          span
+                          span.text-primary
+                            span
+                              | $15
+                        a.pull-xs-right.text-primary(href='#')
+                          i.icon.icon--airplane.m-xs-r-space
+                          span
+                            | Make offer
+                .col-lg-10.col-xs-12.offset-lg-1.m-b-1
+                  .grab-preview
+                    a.link-block.grab-preview__img-wrapper.hidden-sm-down(href='#')
+                      img.grab-preview__img(src='assets/file(54).jpeg')
+                    .grab-preview__content
+                      .grab-preview__content-head
+                        .grab-preview__avatar
+                          img.avatar.m-xs-r-space(src='assets/file(55).jpeg')
+                          span.grab-preview__username.m-xs-r-space
+                            | Fabio
+                          span.text-muted
+                            span
+                              | requested
+                        span.text-muted
+                          | 22 minutes ago
+                      a.grab-preview__content-body.link-block(href='#')
+                        img.grab-preview__img.hidden-md-up(src='assets/file(56).jpeg')
+                        .grab-preview__content
+                          h5.grab-preview__title.word-break
+                            | Nobsound 6j9 Tube Headphone Amplifier
+                          .grab-preview__fields-list
+                            ul.icon-list.text-small
+                              li.icon-list__item
+                                .icon-list__item-icon.hidden-xs-down
+                                  i.icon.icon--route
+                                .icon-list__item-content.grab-preview__field-content
+                                  span.text-muted
+                                    span
+                                      | Deliver to
+                                  span.text-primary.pull-sm-right.m-xs-l-space
+                                    | São Paulo
+                              li.icon-list__item
+                                .icon-list__item-icon.hidden-xs-down
+                                .icon-list__item-content.grab-preview__field-content
+                                  span.text-muted
+                                    span
+                                      | From
+                                  span.text-primary.pull-sm-right.m-xs-l-space
+                                    | Anywhere
+                      .grab-preview__content-foot
+                        span.m-xs-r-space
+                          span
+                            | Traveler reward
+                          span
+                          span.text-primary
+                            span
+                              | $5
+                        a.pull-xs-right.text-primary(href='#')
+                          i.icon.icon--airplane.m-xs-r-space
+                          span
+                            | Make offer
+              .row
+                .col-xs-12.col-md-8.offset-md-2.col-lg-6.offset-lg-3
+                  .p-xs-b-1.p-xs-t-2.p-xs-x-1.p-sm-x-0
+                    a.btn.btn-block.btn-primary(href='#')
+                      span
+                        | View More Grabs
+        footer.footer
+          .footer__container
+            .footer__body
+              .footer__column
+                .footer__logo
+                .footer__copyright
+                  span
+                    | @ 2016 Gentlers
+              .footer__column
+                ul.footer__link-list
+                  li.footer__link-item
+                    a(href='#')
+                      span
+                        | Acerca De
+                  li.footer__link-item
+                    a(href='#')
+                      span
+                        | Preguntas Frecuentes
+                  li.footer__link-item
+                    a(href='#')
+                      span
+                        | Blog
+              .footer__column
+                ul.footer__link-list
+                  li.footer__link-item
+                    a(href='#')
+                      span
+                        | Términos de Uso
+                  li.footer__link-item
+                    a(href='#')
+                      span
+                        | Política de Privacidad
+                  li.footer__link-item
+                    a(href='#')
+                      span
+                        | Marcas aliadas
+              .footer__column
+                ul.locale-switcher
+                  //
+                    <li>
+                    <a class="locale-switcher__link locale-switcher__link--active" href="#">
+                    English</a>
+                    </li>
+                  li
+                    a.locale-switcher__link(href='#')
+                      | Inglés
+                ul.footer__social
+                  li.footer__social-icon
+                    a.social-icon.social-icon--facebook(href='#', target='_blank')
+                  li.footer__social-icon
+                    a.social-icon.social-icon--twitter(href='#', target='_blank')
+                  li.footer__social-icon
+                    a.social-icon.social-icon--pinterest(href='#', target='_blank')
+                  li.footer__social-icon
+                    a.social-icon.social-icon--instagram(href='#', target='_blank')
+            .footer__bottom
+              a.ios-button.ios-button--small(target='_blank')
+                img.ios-button__img(src='assets/img/app_store.svg')

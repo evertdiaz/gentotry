@@ -22,3 +22,4 @@ router.get('/:tipo', function(req, res, next) {
 })
 
 module.exports = router
+ 

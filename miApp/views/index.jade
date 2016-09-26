@@ -1,7 +1,301 @@
-extends layout
-
-block content
-  nav Menu
-  h1= title
-  p I am your #{title}
-  p= description
+doctype html
+html(lang='es')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    title Gentlers
+    // Estilos
+    link(rel='stylesheet', type='text/css', href='/stylesheets/main.css')
+  body
+    #root
+      .page-v2
+        // ===== MENU DE NAVEGACION =====
+        .top-nav
+          section.nav-bar.guest
+            a.logo.active(href='/')
+            section.guest.main
+              a.nav-link(href='/')
+                span Inicio
+              a.nav-link(href='/shop')
+                span Comprar
+              a.nav-link(href='#')
+                span Blog
+              a.nav-link(href='#')
+                span Login
+              a.grabr-button(href='#')
+                span Regìstrate
+        // ===== FIN MENU DE NAVEGACION =====
+        .page-wrapper
+          main
+            section.fullheight.fullheight-first.landing-intro
+              .landing-intro__body
+                h1.landing-intro__title
+                  span Las prendas perfectas que van contigo.
+                p.landing-intro__lead
+                  span Compra la prenda que en serio te gusta, te sirve y necesitas.
+                form.item-search.landing-intro__search
+                  input.item-search__input(placeholder='Busca lo que necesitas...', value='')
+                  button.item-search__button.button(type='submit') Comenzar
+                a.landing-intro__button.button.button--large(href='#')
+                  span Comenzar
+              footer.landing-intro__footer
+                a.ios-button.landing-intro__ios-button
+                  img.ios-button__img(src='assets/img/app_store.svg')
+                a.landing-intro__how-link(href='#howitworks')
+                  span How it works
+            section.fullheight.fullheight--long
+              .landing-list
+                header.landing-list__header
+                  h1.landing-list__title
+                    span ¿Por qué comprar en Gentlers?
+                  p.landing-list__lead
+                    span Olvida los problemas, compra segùn tu estilo.
+                ul.landing-list__list
+                  li.landing-list__item
+                    article.icon-item
+                      img.icon-item__img(src='assets/b23a6e45884b3019ccd7b7a7eaeb06a9.svg')
+                      h2.icon-item__title
+                        span ¿No encuentras prendas correctas?
+                  li.landing-list__item
+                    article.icon-item
+                      img.icon-item__img(src='assets/c897e7799068e47c379c30c8ed4ace05.svg')
+                      h2.icon-item__title
+                        span ¿Una simple foto no te dice cómo te quedará?
+                  li.landing-list__item
+                    article.icon-item
+                      img.icon-item__img(src='assets/87a761e3eb9ba73e0350464074b95b10.svg')
+                      h2.icon-item__title
+                        span ¿Demasiado tiempo y dinero perdido buscando?
+                .landing-list__actions
+                  a.button.button--large(href='#')
+                    span Comienza a comprar
+            section#howitworks.landing-steps
+              .landing-steps__wrapper
+                .landing-steps__aside
+                  .landing-steps__phone
+                    ul.landing-steps__slider-dots
+                      li
+                        button.landing-steps__slider-dot
+                      li
+                        button.landing-steps__slider-dot
+                      li
+                        button.landing-steps__slider-dot
+                      li
+                        button.landing-steps__slider-dot.landing-steps__slider-dot--active
+                    .scroll-box.scroll-box--wrapped.landing-steps__slider.scroll-box--requires-x(tabindex='-1')
+                      .scroll-box__viewport(style='width: 100%; height: 100%;')
+                        ul.landing-steps__slider-list
+                          li.landing-steps__slider-item(style='background-image:url(assets/img/slide1.png);')
+                          li.landing-steps__slider-item(style='background-image:url(assets/img/slide1.png);')
+                          li.landing-steps__slider-item(style='background-image:url(assets/img/slide1.png);')
+                          li.landing-steps__slider-item(style='background-image:url(assets/img/slide1.png);')
+                      .scroll-box__track.scroll-box__track--x
+                        .scroll-box__handle.scroll-box__handle--x(style='width: 25%; left: 186px;')
+                      .scroll-box__track.scroll-box__track--y
+                        .scroll-box__handle.scroll-box__handle--y(style='height: 96.4657%; top: 0px;')
+                .landing-steps__body
+                  h1.landing-steps__title
+                    span ¿Cómo funciona Gentlers?
+                  ul.landing-steps__list
+                    li.landing-steps__item
+                      strong.landing-steps__item-number 1
+                      span Regístrate y déjanos conocer tu estilo.
+                    li.landing-steps__item
+                      strong.landing-steps__item-number 2
+                      span Te mostramos solo prendas que te quedarán y gustarán.
+                    li.landing-steps__item
+                      strong.landing-steps__item-number 3
+                      span Elige las que deseas comprar esta vez.
+                    li.landing-steps__item
+                      strong.landing-steps__item-number 4
+                      span En muy poco tiempo lo tendrás en tu puerta.
+              footer.link-footer.link-footer--alternative
+                ul.link-footer__list
+                  li.link-footer__item
+                    .link-footer__item-wrapper
+                      img(src='assets/2c4cb9c6d36eb33100f6e23db2f0aced.svg')
+                  li.link-footer__item
+                    .link-footer__item-wrapper
+                      img(src='assets/fab6b11ce79174c4331ad0cd76ad478e.svg')
+                  li.link-footer__item
+                    .link-footer__item-wrapper
+                      img(src='assets/8bdc756f3f3a3f4bbf2b84ab1f3bd78c.svg')
+                  li.link-footer__item
+                    .link-footer__item-wrapper
+                      img(src='assets/74bae349f432df0b5bea9b006ef6e156.svg')
+                  li.link-footer__item
+                    .link-footer__item-wrapper
+                      img(src='assets/ee52fda9444279270ad7ef62a9ca45ad.svg')
+            section.fullheight.fullheight--long
+              .landing-list
+                header.landing-list__header
+                  h1.landing-list__title
+                    span Imagina un asesor solo para ti
+                ul.landing-list__list
+                  li.landing-list__item
+                    article.icon-item
+                      img.icon-item__img(src='assets/6a608f6712dd90dad6b9bf049de7a8a1.svg')
+                      h2.icon-item__title
+                        span La mejor selección personalizada
+                      p.icon-item__lead
+                        span
+                          | Nos basamos en tu estilo y gustos para seleccionar las mejores opciones solo para ti.
+                  li.landing-list__item
+                    article.icon-item
+                      img.icon-item__img(src='assets/032c9149018ddb844b040ac0123380fe.svg')
+                      h2.icon-item__title
+                        span Encuentra prendas de cualquier tienda.
+                      p.icon-item__lead
+                        span
+                          | ¿Sientes que no hay mucha variedad de prendas?. Nosotros te mostramos todas las posibles.
+                  li.landing-list__item
+                    article.icon-item
+                      img.icon-item__img(src='assets/0b36e40c0476869f478498758113c6b8.svg')
+                      h2.icon-item__title
+                        span No te preocupes por los precios.
+                      p.icon-item__lead
+                        span Precios bajos, precios altos, ¡lo que importa es tu estilo!
+                .landing-list__actions
+                  a.button.button--large(href='#')
+                    span Ver ejemplos
+            section
+              .landing-list.landing-list--alternative
+                header.landing-list__header
+                  h1.landing-list__title
+                    span Selecciones recientes
+                  p.landing-list__lead.landing-list__lead--alternative
+                    span Algunas prendas que elegimos y encantaron a nuestros clientes.
+                ul.landing-list__list.landing-list__list--alternative
+                  li.landing-list__item.landing-list__item--limited
+                    article.grab-preview-v2
+                      a.grab-preview-v2__link(href='#')
+                        .grab-preview-v2__item(style='background-image:url(assets/img/item1.jpeg);')
+                        .grab-preview-v2__travel-info
+                          article.user-preview-v2.grab-preview-v2__user
+                            .user-preview-v2__avatar(style='background-image:url(assets/img/person1.jpeg);')
+                            .user-preview-v2__name Jorge
+                            .user-preview-v2__city Lima
+                          .grab-preview-v2__plane
+                          article.user-preview-v2.grab-preview-v2__user
+                            .user-preview-v2__avatar(style='background-image:url(assets/img/item1.jpeg);')
+                            .user-preview-v2__name Jinju
+                            .user-preview-v2__city Lima
+                        .grab-preview-v2__footer
+                          .grab-preview-v2__rating
+                          .grab-preview-v2__reward
+                            span Precio 
+                            em S/. 75.00
+                  li.landing-list__item.landing-list__item--limited
+                    article.grab-preview-v2
+                      a.grab-preview-v2__link(href='#')
+                        .grab-preview-v2__item(style='background-image:url(assets/img/item2.jpeg);')
+                        .grab-preview-v2__travel-info
+                          article.user-preview-v2.grab-preview-v2__user
+                            .user-preview-v2__avatar(style='background-image:url(assets/img/person1.jpeg);')
+                            .user-preview-v2__name Cristhian
+                            .user-preview-v2__city Arequipa
+                          .grab-preview-v2__plane
+                          article.user-preview-v2.grab-preview-v2__user
+                            .user-preview-v2__avatar(style='background-image:url(assets/img/person1.jpeg);')
+                            .user-preview-v2__name John Holden
+                            .user-preview-v2__city Lima
+                        .grab-preview-v2__footer
+                          .grab-preview-v2__rating
+                          .grab-preview-v2__reward
+                            span
+                              | Traveler earned
+                            em
+                              | S/. 200.00
+                  li.landing-list__item.landing-list__item--limited
+                    article.grab-preview-v2
+                      a.grab-preview-v2__link(href='#')
+                        .grab-preview-v2__item(style='background-image:url(assets/img/item3.jpeg);')
+                        .grab-preview-v2__travel-info
+                          article.user-preview-v2.grab-preview-v2__user
+                            .user-preview-v2__avatar(style='background-image:url(assets/img/person1.jpeg);')
+                            .user-preview-v2__name Andrés
+                            .user-preview-v2__city Lima
+                          .grab-preview-v2__plane
+                          article.user-preview-v2.grab-preview-v2__user
+                            .user-preview-v2__avatar(style='background-image:url(assets/img/person1.jpeg);')
+                            .user-preview-v2__name Tendencias
+                            .user-preview-v2__city Huaral
+                        .grab-preview-v2__footer
+                          .grab-preview-v2__rating
+                          .grab-preview-v2__reward
+                            span Traveler earned 
+                            em S/. 125.00
+                .landing-list__actions
+                  a.button.button--inverse.button--large(href='#')
+                    span Comenzar a comprar
+                  a.button.button--outlined.button--large(href='#')
+                    span Ver mas experiencias
+            section#traveler.landing-outro
+              h1.landing-outro__title
+                span
+                  | Únete a nuestra comunidad en Facebook y Conoce los mejores consejos.
+              .landing-outro__actions
+                button.button.button--facebook.landing-outro__button.button--large
+                  span
+                    | Conectar en facebook
+                a.boton-registrate.landing-outro__button.button.button--large
+                  span
+                    | Regístrate
+        footer.footer
+          .footer__container
+            .footer__body
+              .footer__column
+                .footer__logo
+                .footer__copyright
+                  span
+                    | @ 2016 Gentlers
+              .footer__column
+                ul.footer__link-list
+                  li.footer__link-item
+                    a
+                      span
+                        | Acerca De
+                  li.footer__link-item
+                    a(href='#')
+                      span
+                        | Preguntas Frecuentes
+                  li.footer__link-item
+                    a(href='#')
+                      span
+                        | Blog
+              .footer__column
+                ul.footer__link-list
+                  li.footer__link-item
+                    a(href='#')
+                      span
+                        | Términos de Uso
+                  li.footer__link-item
+                    a(href='#')
+                      span
+                        | Política de Privacidad
+                  li.footer__link-item
+                    a(href='#')
+                      span
+                        | Marcas aliadas
+              .footer__column
+                ul.locale-switcher
+                  //
+                    <li>
+                    <a class="locale-switcher__link locale-switcher__link--active" href="https://grabr.io/en/">
+                    English</a>
+                    </li>
+                  li
+                    a.locale-switcher__link(href='#')
+                      | Inglés
+                ul.footer__social
+                  li.footer__social-icon
+                    a.social-icon.social-icon--facebook(href='#', target='_blank')
+                  li.footer__social-icon
+                    a.social-icon.social-icon--twitter(href='#', target='_blank')
+                  li.footer__social-icon
+                    a.social-icon.social-icon--pinterest(href='#', target='_blank')
+                  li.footer__social-icon
+                    a.social-icon.social-icon--instagram(href='#', target='_blank')
+            .footer__bottom
+              a.ios-button.ios-button--small(target='_blank')
+                img.ios-button__img(src='assets/img/app_store.svg')

@@ -4,7 +4,11 @@ var Schema =  mongoose.Schema
 
 var userSchema = new Schema({
 	name: String,
-	age: Number
+	age: Number,
+	password: String,
+	firstname: String,
+	lastname: String
+
 })
 mongoose.model('users', userSchema) 
 var User = mongoose.model('users')
