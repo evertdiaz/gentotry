@@ -8372,18 +8372,15 @@ a.text-danger:hover {
 }
 @font-face {
     font-family: Circe;
-    src: url(/dist/382ad2696910d98a5a0b88acff9c6e08.woff) format("woff"), url(/dist/246bed5d06ed2d816d99462036b7dae3.ttf) format("truetype");
     font-style: normal;
     font-weight: 700
 }
 @font-face {
     font-family: Circe;
-    src: url(/dist/13608d76e3d17175871c404a5169e419.woff) format("woff"), url(/dist/a7a49cb8674d694d657e5d2059c2040f.ttf) format("truetype");
     font-style: normal;
     font-weight: 400
 }
 @font-face {
-    src: url(/dist/2dd2f38bf7c24e697d2a67e7e771e2fa.woff) format("woff"), url(/dist/75c47cb17dec1dc94d7922a2c89e34c9.ttf) format("truetype");
     font-family: Circe;
     font-style: normal;
     font-weight: 300

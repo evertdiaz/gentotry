@@ -1,11 +1,9 @@
-doctype html
-html(lang='es')
-  head
-    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
-    title Gentlers
-    // Estilos
-    link(rel='stylesheet', type='text/css', href='/stylesheets/main.css')
+extends template
+
+block vista
+  title=title
+  meta(name="description", content="This is an example of a meta description. This will often show up in search results.")
+
   body
     #root
       .page-v2
@@ -18,11 +16,11 @@ html(lang='es')
                 span Inicio
               a.nav-link(href='/shop')
                 span Comprar
-              a.nav-link(href='#')
-                span Blog
-              a.nav-link(href='#')
-                span Login
-              a.grabr-button(href='#')
+              //- a.nav-link(href='#')
+              //-   span Blog
+              //- a.nav-link(href='#')
+              //-   span Login
+              a.grabr-button(href='/register')
                 span Regìstrate
         // ===== FIN MENU DE NAVEGACION =====
         .page-wrapper
@@ -67,7 +65,7 @@ html(lang='es')
                       h2.icon-item__title
                         span ¿Demasiado tiempo y dinero perdido buscando?
                 .landing-list__actions
-                  a.button.button--large(href='#')
+                  a.button.button--large(href='/shop')
                     span Comienza a comprar
             section#howitworks.landing-steps
               .landing-steps__wrapper
@@ -156,9 +154,9 @@ html(lang='es')
                       p.icon-item__lead
                         span Precios bajos, precios altos, ¡lo que importa es tu estilo!
                 .landing-list__actions
-                  a.button.button--large(href='#')
+                  a.button.button--large(href='#selecciones')
                     span Ver ejemplos
-            section
+            section#selecciones
               .landing-list.landing-list--alternative
                 header.landing-list__header
                   h1.landing-list__title
@@ -235,10 +233,10 @@ html(lang='es')
                 span
                   | Únete a nuestra comunidad en Facebook y Conoce los mejores consejos.
               .landing-outro__actions
-                button.button.button--facebook.landing-outro__button.button--large
+                button.button.button--facebook.landing-outro__button.button--large(onClick="window.open('https://facebook.com/gentlers.pe');", formtarget="_blank")
                   span
                     | Conectar en facebook
-                a.boton-registrate.landing-outro__button.button.button--large
+                a.boton-registrate.landing-outro__button.button.button--large(href='register')
                   span
                     | Regístrate
         footer.footer
