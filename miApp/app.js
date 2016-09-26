@@ -13,6 +13,7 @@ var clothes = require('./routes/clothes');
 var register = require('./routes/register');
 var login = require('./routes/login');
 var shop = require('./routes/shop');
+var api = require('./routes/api');
 
 var app = express();
 
@@ -36,6 +37,7 @@ app.use('/clothes', clothes);
 app.use('/register', register);
 app.use('/login', login);
 app.use('/shop', shop);
+app.use('/api', api);
 
 // NOTA: Otra forma sin usar middlewares es cargar directamente aquí los archivos de modelos:
 // var fs = require('fs')
